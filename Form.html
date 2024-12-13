@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body> 
+       <h2  style="background-color: aqua; width: 210px; " align="center">Submission Form</h2>
+        
+        <!--The action attribute defines the action to be performed when the form is submitted.-->
+
+        <!--The method attribute specifies how to send form-data (the form-data is sent to the page specified in the action attribute).
+
+        The form-data can be sent as URL variables (with method="get") or as HTTP post transaction (with method="post"). -->
+
+        <form action="Index.html" method="POST" enctype="multipart/form-data">
+
+            <label for="username">Username:</label>
+            <input type="text" id="username" minlength="6" maxlength="15" placeholder="abcd"     required><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" minlength="6" maxlength="12" required><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="abc@gmail.com"><br>
+
+            <label for="phone">Phone #:</label>
+            <input type="phone" id="Phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br>
+
+            <label for="DOB">DOB:</label>
+            <input type="date" id="DOB" >
+            <br>
+    
+            <label for="Quantiy">Quantity</label>
+            <input type="number"id="Quantity" min="0" max="99"value="1"><br>
+
+            <label for="title">Title:</label>
+
+            <label for="Mr">Mr.</label>
+            <input type="radio" id="Mr." value="Mr.">
+            <label for="Ms">Ms.</label>
+            <input type="radio" id="Ms.." value="Ms.">
+            <label for="PhD">PhD.</label>
+            <input type="radio" id="PhD." value="PhD.">
+            <br>
+
+            <label for="gender">Gender:</label>
+            <label for="male">Male.</label>  
+            <input type="radio" id="male" value="Male">         
+            <label for="female">female.</label>
+            <input type="radio" id="female" value="female">         
+            <label for="">Others.</label>
+            <input type="radio" id="Others" value="Others">         
+
+
+            <br>
+             </select>
+             <label for="file">File:</label>
+             <input type="file" id="File" accept="image/png, image/jpeg, ">
+            <br>
+
+            <label for="payment">Payment</label>
+            <select>
+                <option value="visa">Visa</option>
+                <option value="visa">Rupay</option>
+                <option value="visa">UPI</option>
+                <option value="visa">MaterCard</option>
+                <option value="giftcard">Giftcard</option>
+            </select>
+            <br>
+                <label for="verify">Verify:</label>
+                <input type="checkbox" id="Verify">
+            <br>
+            <label for="comment">Comment</label>
+            <textarea id="Comment" rows="2" cols="25"></textarea>
+            <br>
+            <input type="reset">
+            <br>
+            <input type="submit">
+        
+
+
+        </form>
+</body>
+</html>
